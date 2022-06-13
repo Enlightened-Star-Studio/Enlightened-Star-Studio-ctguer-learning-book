@@ -1,15 +1,11 @@
 module.exports = {
   // 站点配置
   lang: 'zh-CN',
-  title: '你好， VuePress ！',
-  description: '这是我的第一个 VuePress 站点',
+  title: '知识星球',
+  description: '让知识能有所归~',
   // 主题和它的配置
-  theme: '@vuepress/theme-default',
-  locales: {
-    '/': {
-      lang: 'zh-CN'
-    }
-  },
+  theme: 'reco',
+  base: '/Enlightened-Star-Studio-ctguer-learning-book/',
   plugins: [
     [
       'vuepress-plugin-helper-live2d', {
@@ -40,50 +36,56 @@ module.exports = {
   ],
   themeConfig: {
     search: true,
+    subSidebar: 'auto',
     searchMaxSuggestions: 10,
-      smoothScroll: true,
-      lastUpdated: '上一次更新时间',
-      nextLinks: true,
-      prevLinks: true,
-      nav: [
-        { text: '首页', link: '/' },
-        { text: '起步', link: '/welcome/before_learning' },
-        { text: 'Github', link: 'http://www.baidu.com' },
-      ],
-      sidebar: [
-        {
-          title: '欢迎学习',
-          path: '/welcome/before_learning',
-          collapsable: true,
-          children: [
-            { title: '学前必读', path: '/welcome/before_learning' },
-
-            {
-              title: '测试',
-              path: '/welcome/test/test1',
-              children: [
-                { title: '测试1',path: '/welcome/test/test1' },
-              ]
-            },
-          ]
-        },
-        {
-          title: 'MySQL学习',
-          path: '/sql/sql1',
-          collapsable: true,
-          children: [
-            { title: 'SQL1', path: '/sql/sql1' },
-            { title: 'SQL2', path: '/sql/sql2' }
-          ]
-        },
-        {
-          title: 'Java学习',
-          path: '/java/java1',
-          collapsable: true,
-          children: [
-            { title: 'Java1', path: '/java/java1' },
-          ]
-        }
-      ]
-    },
+    smoothScroll: true,
+    lastUpdated: '上一次更新时间',
+    nextLinks: true,
+    prevLinks: true,
+    nav: [
+      { text: '首页', link: '/' },
+      { text: '起步', link: '/welcome/before_learning' },
+      { text: 'Github', link: 'http://www.baidu.com' },
+    ],
+    sidebar: [
+      {
+        title: '欢迎使用',
+        collapsable: true,
+        children: [
+          { title: '介绍', path: '/welcome/before_learning' },
+          { title: '如何添加文档', path: '/welcome/how_to_use' },
+          {
+            title: '测试',
+            path: '/welcome/test/test1',
+            children: [
+              { title: '测试1',path: '/welcome/test/test1' },
+            ]
+          },
+        ]
+      },
+      {
+        title: 'MySQL学习',
+        collapsable: true,
+        children: [
+          { title: 'SQL1', path: '/sql/sql1' },
+          { title: 'SQL2', path: '/sql/sql2' }
+        ]
+      },
+      {
+        title: 'Java学习',
+        collapsable: true,
+        children: [
+          { title: 'Java1', path: '/java/java1' },
+        ]
+      },
+      {
+        title: 'SpringBoot学习',
+        collapsable: true,
+        children: [
+          { title: '开始', path: '/springboot/start_up' },
+          { title: '介绍', path: '/springboot/intro' },
+        ]
+      }
+    ]
+  },
 }
