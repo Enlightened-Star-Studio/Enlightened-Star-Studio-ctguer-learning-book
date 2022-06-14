@@ -6,7 +6,7 @@ module.exports = {
   port: 10030,
   lang: 'zh-CN',
   title: '知识星球',
-  description: '让知识能有所归~',
+  description: 'make a difference~',
   // 主题和它的配置
   theme: 'reco',
   base: '/Enlightened-Star-Studio-ctguer-learning-book/',
