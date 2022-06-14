@@ -5,15 +5,22 @@ module.exports = {
     subSidebar: 'auto',
     searchMaxSuggestions: 10,
     smoothScroll: true,
-    lastUpdated: '上一次更新时间',
-    nextLinks: true,
-    prevLinks: true,
+    serviceWorker: {
+        updatePopup: {
+            message: "有新的内容.",
+            buttonText: '更新'
+        }
+    },
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
-    // 默认为 "Edit this page"
+    // 默认为 "在github上协作编辑"
     editLinkText: "帮助我们改善此页面！",
+    // 最后更新时间
+    lastUpdated: "上一次更新时间",
     // 最大深度
     sidebarDepth: 2,
+    nextLinks: true,
+    prevLinks: true,
     nav,
     // sidebar: [
     //   {
