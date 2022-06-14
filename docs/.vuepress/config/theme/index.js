@@ -8,14 +8,13 @@ module.exports = {
     lastUpdated: '上一次更新时间',
     nextLinks: true,
     prevLinks: true,
-    nav,
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     // 默认为 "Edit this page"
     editLinkText: "帮助我们改善此页面！",
     // 最大深度
-
     sidebarDepth: 2,
+    nav,
     // sidebar: [
     //   {
     //     title: '欢迎使用',
