@@ -53,26 +53,27 @@ tags:
 
 ## 三、添加文件
 
-> 假如您发现，目前知识星球中没有 SpringBoot 的相关文档，想进行相关文档的贡献，您可以按照如下步骤进行操作
+> 在开始前，请先了解文件的目录结构
+>
+> ![image-20220614205828809](http://43.142.84.101:9000/control/202206142058151.png)
+>
+> 现在，假如您发现，目前知识星球中没有 SpringBoot 的相关文档，想进行相关文档的贡献，您可以按照如下步骤进行操作
 
 1. 在docs文件夹下创建新的文件夹和文件
 
 ![](https://insurence-1304011999.cos.ap-shanghai.myqcloud.com/img/202206132327571.png)
 
 2. 配置文件目录
-   修改/docs/.vuepress/config.js文件，在themeConfig.sidebar下添加如下配置
+   修改/docs/.vuepress/config/sidebar/index.js文件，在下添加如下配置
 
 ```js
-{
-    title: 'SpringBoot学习',  // 标题
-    collapsable: true, // 是否可折叠
-    children: [
-		{
-            title: '开始',   // 子菜单标题
-            path: '/springboot/start_up'  // 对应文档的路径(结合上图的文件路径理解)
-        },
-    ]
-}
+    {
+        title: 'SpringBoot学习',
+        collapsable: true,
+        children: [
+            { title: '开始', path: '/springboot/start_up' }
+        ]
+    }
 ```
 
 3. 配置正常后，会自动热更新到网页中
@@ -82,6 +83,19 @@ tags:
 之后在md文件按照markdown语法编写文档即可，保存后会自动渲染到网页上。
 
 如果需要添加其他的页面，只需要按照上述的步骤再次添加即可。
+
+```js
+    {
+        title: 'SpringBoot学习',
+        collapsable: true,
+        children: [
+            { title: '开始', path: '/springboot/start_up' },
+            { title: '介绍', path: '/springboot/intro' },
+        ]
+    }
+```
+
+
 
 ![image-20220614004606002](https://insurence-1304011999.cos.ap-shanghai.myqcloud.com/img/202206140046893.png)
 
