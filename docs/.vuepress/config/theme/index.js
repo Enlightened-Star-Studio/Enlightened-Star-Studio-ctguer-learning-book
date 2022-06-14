@@ -5,16 +5,18 @@ module.exports = {
     subSidebar: 'auto',
     searchMaxSuggestions: 10,
     smoothScroll: true,
-    serviceWorker: {
-        updatePopup: {
-            message: "有新的内容.",
-            buttonText: '更新'
-        }
+    themeConfig: {
+        // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
+        repo: 'vuejs/vuepress',
+        // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
+        // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
+        repoLabel: '参与编辑',
+        // 以下为可选的编辑链接选项
+        // 默认是 false, 设置为 true 来启用
+        editLinks: true,
+        // 默认为 "Edit this page"
+        editLinkText: '帮助我们改善此页面！'
     },
-    // 默认是 false, 设置为 true 来启用
-    editLinks: true,
-    // 默认为 "在github上协作编辑"
-    editLinkText: "帮助我们改善此页面！",
     // 最后更新时间
     lastUpdated: "上一次更新时间",
     // 最大深度
