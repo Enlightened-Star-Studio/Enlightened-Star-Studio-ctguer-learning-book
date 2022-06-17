@@ -115,15 +115,15 @@ tags:
 >
 > tags: 文档标签（检索需要）
 
-![image-20220617144514256](http://43.142.84.101:9000/control/202206171445689.png)
+![image-20220617144514256](https://insurence-1304011999.cos.ap-shanghai.myqcloud.com/img/202206171458774.png)
 
 2. 在侧边栏sidebar的配置文件中编写对应文档的配置
 
-![image-20220617144749442](http://43.142.84.101:9000/control/202206171447025.png)
+![image-20220617144749442](https://insurence-1304011999.cos.ap-shanghai.myqcloud.com/img/202206171458444.png)
 
 3. 文档内容能正常显示
 
-![image-20220617144844561](http://43.142.84.101:9000/control/202206171448918.png)
+![image-20220617144844561](https://insurence-1304011999.cos.ap-shanghai.myqcloud.com/img/202206171458806.png)
 
 4. commit信息规范
 
