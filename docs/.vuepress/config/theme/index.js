@@ -10,5 +10,9 @@ module.exports = {
     nextLinks: true,
     prevLinks: true,
     nav,
-    sidebar
+    sidebar,
+    valineConfig: {
+        appId: 'wdUJPQzzV4oRBL3H0c3cDk0d-gzGzoHsz',
+        appKey: 'C6yITP4sli6BJrOkhFjum6J9',
+    }
 }
